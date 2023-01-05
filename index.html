@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>kirby</title>
+</head>
+<body>
+<div>
+	<svg
+	width="500"
+	height="500"
+  viewBox="0 0 110 110"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="pinkGradient">
+      <stop offset="10%" stop-color="#ffadad" />
+      <stop offset="85%" stop-color="#f5789d" />
+      <stop offset="100%" stop-color="#e66383" />
+    </radialGradient>
+  </defs>
+
+  <defs>
+
+    <linearGradient id="eyeGradient" gradientTransform="rotate(90)">
+      <stop offset="5%" stop-color="#01020a" />
+      <stop offset="50%" stop-color="#030621" />
+      <stop offset="100%" stop-color="#5464f7" />
+    </linearGradient>
+  </defs>
+
+  <defs>
+    <radialGradient id="eyeGlow">
+      <stop offset="30%" stop-color="#fff" />
+      <stop offset="95%" stop-color="rgba(255, 255, 255, 0)" />
+    </radialGradient>
+  </defs>
+
+  <defs>
+    <radialGradient id="tongueGradient">
+      <stop offset="25%" stop-color="#Df2553" />
+      <stop offset="95%" stop-color="#c91643" />
+    </radialGradient>
+  </defs>
+
+  <defs>
+    <radialGradient id="mouthGradient">
+      <stop offset="25%" stop-color="#8f1533" />
+      <stop offset="95%" stop-color="#770e2a" />
+    </radialGradient>
+  </defs>
+
+  <defs>
+    <linearGradient id="armShadow" gradientTransform="rotate(64)">
+      <stop offset="5%" stop-color="#8f3148" />
+      <stop offset="95%" stop-color="#e66383" />
+    </linearGradient>
+  </defs>
+
+  <defs>
+    <linearGradient id="feetShadow" gradientTransform="rotate(90)">
+      <stop offset="28%" stop-color="#8f0a29" />
+      <stop offset="95%" stop-color="#b51238" />
+    </linearGradient>
+  </defs>
+
+  <defs>
+    <radialGradient id="blush">
+      <stop offset="40%" stop-color="#f06e95" />
+      <stop offset="90%" stop-color="rgba(255, 140, 140, 0)" />
+    </radialGradient>
+  </defs>
+
+  <!-- RIGHT ARM -->
+  <ellipse id="right-arm" class="arm" cx="17" cy="58" rx="15" ry="20" fill="#e66383" transform="rotate(35 17 58)" />
+
+  <!-- LEFT ARM -->
+  <ellipse id="left-arm" class="arm" cx="80" cy="58" rx="15" ry="20" fill="url(#armShadow)" transform="rotate(-40 80 58)" />
+
+  <!-- ellipse id="left-arm-shadow" class="shadow" cx="80" cy="58" rx="15" ry="20" fill="#e66383" transform="rotate(-40 80 58)" /-->
+  <!-- LEFT FEET -->
+  <ellipse id="left-feet" class="feet" cx="68" cy="87" rx="17" ry="12" fill="url(#feetShadow)" transform="rotate(15 62 87)" />
+
+  <!-- RIGHT FEET -->
+  <ellipse id="right-feet" class="feet" cx="35" cy="87" rx="19" ry="13.3" fill="url(#feetShadow)" transform="rotate(-10 34 85)" />
+	
+
+  <!-- BODY -->
+  <circle cx="50" cy="50" r="40" fill="url('#pinkGradient')" />
+
+  <!-- RIGHT-EYE -->
+  <ellipse id="right-eye" class="eye" cx="39.5" cy="40" rx="4" ry="9" fill="url(#eyeGradient)" transform="rotate(-5 39.5 40)" stroke-width="1" stroke="#000"/>
+
+  <ellipse id="right-eye-glow" class="eye-glow" cx="41.5" cy="33" rx="4" ry="4.5" fill="url(#eyeGlow)" transform="rotate(-5 41.5 33) skewX(-5) skewY(5)" />
+
+  <!-- LEFT-EYE -->
+  <ellipse id="left-eye" class="eye" cx="67" cy="40" rx="4" ry="9" fill="url(#eyeGradient)" transform="rotate(-2 67 40)" stroke-width="1" stroke="#000" />
+
+  <ellipse id="left-eye-glow" class="eye-glow" cx="69" cy="30" rx="4" ry="4.5" fill="url(#eyeGlow)" transform="rotate(-2 69 30) skewX(-5) skewY(5)" />
+
+  <!-- MOUTH -->
+  <ellipse id="mouth" cx="55" cy="71" rx="18" ry="19" fill="url(#mouthGradient)" transform="skewX(-1) skewY(-2)" />
+
+  <!-- TONGUE -->
+  <path d="M 38.1, 61 C 73, 48, 75, 92, 44, 85.6 C 36.3, 80.9, 33, 69, 38, 61" fill="url(#tongueGradient)" />
+
+  <!-- BLUSH -->
+  <ellipse id="right-blush" class="blush" cx="34" cy="48" rx="8" ry="6" fill="url(#blush)" transform="rotate(-20 34 48) skewX(-5) skewY(5)" />
+
+  <ellipse id="right-blush" class="blush" cx="83" cy="48" rx="8" ry="6" fill="url(#blush)" transform="rotate(20 83 48) skewX(-5) skewY(5)" />
+
+</svg>
+</div>
+<style type="text/css">
+	body {
+		background-color: #b8d0f5;
+	}
+	div {
+		width: 500px;
+		height: 500px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+
+</body>
+</html>
